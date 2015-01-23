@@ -1,6 +1,6 @@
 app.controller('BlogController', function($scope, $http, $log, $window, blogEntryService) {
 		$scope.blogList = [];
-		$scope.blogContentAddress = 'https://api.github.com/repos/rebornix/rebornix.github.io/contents/_posts';
+		$scope.blogContentAddress = 'https://api.github.com/repos/edwinlly/esblog.github.io/contents/_posts';
 		$http({method: 'GET', url: $scope.blogContentAddress}).
 			success(function(data, status, headers, config) {
 					var alldata = data.reverse();
